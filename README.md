@@ -1,2 +1,2 @@
-# Spark-DeltaLake-Binder
-Spark MLlib + Delta Lake + Binder
+# Spark-DeltaLake-Demo
+Spark MLlib + Delta Lake + Docker
