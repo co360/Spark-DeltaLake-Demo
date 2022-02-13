@@ -4,8 +4,6 @@ services:
       build:
         context: .
         dockerfile: Dockerfile
-      environment:
-        - JUPYTER_TOKEN=spark
       volumes:
         - ./:/home/jovyan
       ports:
