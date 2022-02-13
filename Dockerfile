@@ -1,5 +1,9 @@
 FROM jupyter/pyspark-notebook
 
+ENV NB_USER jovyan
+ENV NB_UID 1000
+ENV HOME /home/${NB_USER}
+
 # Install Python modules from requirements.txt file
 COPY --chown=${NB_UID}:${NB_GID} requirements.txt /tmp/
 RUN pip install --quiet --no-cache-dir --requirement /tmp/requirements.txt && \
