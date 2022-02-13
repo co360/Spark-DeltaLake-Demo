@@ -1,0 +1,13 @@
+version: "3.7"
+services:
+    spark-demo:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      environment:
+        - JUPYTER_TOKEN=spark
+      volumes:
+        - ./:/home/jovyan
+      ports:
+        - 8888:8888
+      container_name: spark-demo
